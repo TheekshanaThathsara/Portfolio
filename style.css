@@ -44,5 +44,13 @@ body{
 
 .navbar a:hover{
     color: #0ef;
-    
+
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    background: ;
 }
