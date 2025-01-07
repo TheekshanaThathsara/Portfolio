@@ -43,6 +43,8 @@ body{
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
+    opacity: 0;
+    animation:  slideTop .5s ease forwards;
 }
 
 .navbar a:hover{
@@ -128,4 +130,26 @@ body{
 .btn-box:hover{
     color: black;
     box-shadow: 0 0 5px  cyan, 0 0 25px  cyan, 0 0 50px  cyan, 0 0 100px  cyan, 0 0 200px  cyan;
+}
+
+@keyframes sildeRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
